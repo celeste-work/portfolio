@@ -1,0 +1,217 @@
+body{
+    /*background: url(images/foto-portada4.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover; /* Asegura que el video cubra el área sin desbordarse */
+    overflow: hidden;
+}
+
+nav{
+    margin: 15px;
+}
+  
+.header-responsive {
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh; /* Usa altura relativa para adaptarse al tamaño de la pantalla */
+    margin: 0 20%; /* Usa % para márgenes, haciendo que se adapten a diferentes pantallas */
+    padding: 20px 20px; /* Reduce el padding y usa valores relativos */
+    border-radius: 20px;
+    border: 3px solid rgba(205, 151, 250, 0.527);
+    backdrop-filter: blur(10px);
+}
+
+/*header{
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin: 0px 200px 5px 200px;
+    padding: 0px 0px 500px 0px;
+    border-radius: 20px;
+    border: 3px solid #fddada; 
+    backdrop-filter: blur(10px);
+}*/
+
+.contenido-centrado{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+.imagen-centrada{
+    margin: 35px 0px 0px 0px;
+    padding: 0px 20px 5px 20px;
+} 
+.nombre{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-shadow: 1px 4px 1px black;
+    color: white;
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    text-shadow: 1px 3px 1px black;
+    color: white;
+}
+
+.descripcion{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    text-shadow: 1px 2px 2px black;
+    color: white;
+}
+
+.contacto{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px 40px 0px;
+    padding: 0px 20px 5px 20px;
+    box-shadow: 4px 4px 10px black;
+    text-shadow: 1px 3px 1px black;
+    color: white;
+}
+.contacto-menu{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btn{
+    width: 50%;
+    background-color:#816cf7 ;
+    border: 1.8px solid #00000070;
+}
+.sin-subrayado{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background-color:#6b52f7 ;
+    transform: scale(1.15);
+}
+
+.menu-logos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    padding: 0% 0% 0% 10%;
+    grid-gap: 30px;
+}
+
+.logos{
+    width: 50%;
+    height: 100%;
+    transition: all 300ms;
+    position: relative;
+    background-color: rgba(19, 18, 24, 0.541);
+    border-radius: 10px;
+    border:  1px solid rgba(205, 151, 250, 0.233); 
+    backdrop-filter: blur(10px);
+}
+.logos:hover{
+    transform: scale(1.30);
+}
+
+.container{
+    padding-left: 0;  /* Elimina padding izquierdo del contenedor */
+    padding-right: 0;  /* Elimina padding derecho del contenedor */
+}
+
+form{
+    font-family: "Montserrat", sans-serif;
+    width: 60%; 
+    height: 400px;
+    margin: 100px; 
+    padding: 0 20px;
+    text-align: center; 
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-contacto{
+    text-shadow: 1px 3px 1px black;
+}
+
+/******************************/
+
+/* Limita el tamaño de la imagen en pantallas pequeñas */
+@media (max-width: 576px) {
+    .perfil-imagen {
+        max-width: 150px; /* Ajusta el tamaño máximo de la imagen en móviles */
+    }
+}
+
+/* Puedes ajustar el tamaño en pantallas medianas si lo deseas */
+@media (min-width: 320px) and (max-width: 768px) {
+    .perfil-imagen {
+        max-width: 250px; /* Tamaño de la imagen en pantallas medianas */
+    }
+}
+
+/****************************/
+
+/* Estilos generales de la imagen */
+.imagen-centrada img {
+    max-width: 100%; /* Se asegura de que la imagen no se extienda más allá de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Ajuste para pantallas entre 576px y 767px */
+@media (max-width: 767px) {
+    .imagen-centrada img {
+        max-width: 70%; /* Ajusta el tamaño de la imagen a 70% del contenedor en pantallas pequeñas */
+    }
+}
+
+/* Ajuste para pantallas aún más pequeñas (móviles) */
+@media (max-width: 576px) {
+    .imagen-centrada img {
+        max-width: 60%; /* Reduce aún más la imagen en dispositivos móviles */
+    }
+}
+
+/****************************/
+
+@media (max-width: 768px) {
+    .header-responsive {
+        margin: 0 5%; /* Reduce el margen en pantallas pequeñas */
+        padding: 20px; /* Ajusta el padding en dispositivos móviles */
+        min-height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+}
+
+/* Opcional: puedes ajustar la imagen en pantallas pequeñas si es muy grande */
+@media (max-width: 576px) {
+    .imagen-centrada img {
+        max-width: 80%; /* Ajusta el tamaño máximo en pantallas pequeñas */
+    }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+
+    </head>
+
+    <body>
+
+        <video autoplay muted loop id="videoFondo">
+            <source src="images/fondo-violeta-en-movimiento.mp4" type="video/mp4">
+        </video>
+        
+        <nav class="navbar navbar-expand-lg shadow sticky-top" data-bs-theme="dark"><!--bg-body-tertiary Es el color-->
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">Home</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#seccion1">Herramientas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccion2">Proyectos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccion3">Contactame</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        
+        <header class="header-responsive">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+        
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <span class="imagen-centrada">
+                            <img src="images/foto-perfil-dibujo.png" alt="Responsive image" class="img-fluid rounded-circle mx-auto d-block">
+                        </span>
+                    </div>
+        
+                </div>
+            </div> 
+            <h1 class="nombre text-center">Celeste Yasmin Aquino</h1>
+            <h4 class="subtitulo text-center">Hola! No soy un robot. Soy una Desarrolladora Full-Stack en proceso.</h4>
+            <p class="descripcion text-center">Actualmente aumentando mis conocimientos y habilidades en el Front-End. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea officia ipsam veritatis aperiam ducimus fugit voluptates, officiis assumenda facilis minus temporibus velit, blanditiis, ullam facere iure nesciunt. Voluptates, quibusdam inventore?</p>
+        </header>
+
+        <h2 class="contacto text-center" >Contacto</h2> 
+        <div class="contacto-menu row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                <a class="btn text-light sin-subrayado" href="https://www.linkedin.com/in/celeste-aquino-b3873016a/" target="_blank">Linkedin</a>
+            </div>
+        
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                <a class="btn text-light sin-subrayado" href="https://github.com/celeste-work?tab=repositories" target="_blank">GitHub</a>
+            </div>
+        
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                <a class="btn text-light sin-subrayado" href="mailto:celesteaquino12@gmail.com" target="_blank">Email</a>
+            </div>
+        
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                <a class="btn text-light sin-subrayado" href="https://wa.me/541168466967" target="_blank">Contacto</a>
+            </div>
+        </div>
+
+        <h2 class="contacto text-center" id="seccion1">Herramientas</h2>
+        <div class="menu-logos">
+            <img src="images/logo-html.png" alt="logo html" class="logos">
+            <img src="images/logo-css.png" alt="logo css" class="logos">
+            <img src="images/logo-javascript.png" alt="logo javascript" class="logos">
+            <img src="images/logo-java.png" alt="logo java" class="logos">
+            <img src="images/logo-sql.png" alt="logo sql" class="logos">
+        </div>
+        
+       <h2 class="contacto text-center" id="seccion2">Proyectos</h2>
+
+        <div class="container my-4">  <!-- Añadido my-4 para márgenes superior e inferior -->
+            <div class="row justify-content-center">
+                <!-- Primera tarjeta -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">  <!-- Ajuste para ocupar 4 columnas en md y superior -->
+                    <div class="card h-100">  <!-- h-100 para que la tarjeta ocupe todo el alto posible -->
+                        <a href="https://celeste-work.github.io/Challenge-Alura/" target="_blank"><img class="card-img-top" src="ejemplo/encriptador.png" alt="Card image"></a>
+                        <div class="card-body">
+                            <p class="card-text">Te presento mi encriptador de texto, una herramienta simple que convierte tus mensajes en código secreto, manteniéndolos seguros y solo accesibles para quien tenga la clave. ¡Ideal para proteger tu información!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda tarjeta -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://celeste-work.github.io/juego-secreto/" target="_blank"><img class="card-img-top" src="ejemplo/juego-secreto.png" alt="Card image"></a>
+                        <div class="card-body">
+                            <p class="card-text">¿Lograras adivinar el Numero Secreto? Tienes varios intentos para lograrlo. ¿Podras realizarlo en tan pocos intentos? Ponlo a prueba!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tercera tarjeta -->
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://celeste-work.github.io/Proyecto-Mini-PaginaWeb/" target="_blank"><img class="card-img-top" src="ejemplo/mini-pagina.png" alt="Card image"></a>
+                        <div class="card-body">
+                            <p class="card-text">Te presento mi primera mini-pagina web sobre un emprendimiento de tejidos!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <form action="https://formspree.io/f/mgvwgovl" method="post" class="p-4 border rounded shadow" id="seccion3">
+                        <h1 class="text-center text-light form-contacto mb-4">Contactame</h1>
+                        <hr>
+                        
+                        <div class="form-group">
+                            <label class="texto" for="usuario">Nombre</label>
+                            <input type="text" name="username" id="usuario" class="form-control" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label class="texto" for="correo">Correo electrónico</label>
+                            <input type="email" name="email" id="correo" class="form-control" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label class="texto" for="telefono">Número de teléfono</label>
+                            <input type="tel" name="tel" id="telefono" class="form-control" required>
+                        </div>
+        
+                        <div class="form-group">
+                            <label class="texto" for="mensaje">Mensaje</label>
+                            <textarea style="resize: none;" name="mensaje" id="mensaje" class="form-control" rows="4"></textarea>
+                        </div>
+        
+                        <div class="text-center">
+                            <input type="submit" value="Enviar" class="btn btn-primary mt-5">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="bg-dark text-light pt-5 pb-4">
+            <div class="container">
+                <!-- Fila que contiene 2 columnas -->
+                <div class="row">
+                    <!-- Primera columna (Información de contacto) -->
+                    <div class="col-md-6 mb-4">
+                        <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #007bff; height: 2px">
+                        <p><i class="fas fa-home mr-3"></i> Dirección: Calle Falsa 123, Buenos Aires</p>
+                        <p><i class="fas fa-envelope mr-3"></i> celesteaquino12@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> +54 1168466967</p>
+                    </div>
+                </div><br><br>
+          
+                <!-- Derechos de autor -->
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                    <p class="text-light">&copy; 2024 Mi sitio web. Todos los derechos reservados.</p>
+                    <p class="text-light">Desarrollado por Celeste Aquino</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+
+</html>
